@@ -1,14 +1,9 @@
-import { Fragment } from "react";
-import Navbar from "./components/navbar.jsx";
-import Footer from "./components/footer.jsx";
-import DropshippingStore from "./DropshippingStore"; // ✅ fixed path
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-export default function Home() {
-  return (
-    <Fragment>
-      <Navbar />
-      <DropshippingStore />
-      <Footer />
-    </Fragment>
-  );
-}
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
